@@ -201,7 +201,7 @@ Na transformação dos dados foi necessário utilizar a ferramenta Pentaho. O pr
 
 Logo após o desenvolvimento do tratamento dos dados foi necessário automatizar esse processo, e para isso, foi aplicado um JOB. 
 
-![Tratamento de dados](https://github.com/gacarvalho/analyze-tweets-disney-plus/blob/main/etl/transformation.gif?raw=true)
+![Tratamento de dados](https://github.com/gacarvalho/analyze-tweets-disney-plus/blob/main/etl/load.gif)
 
 
 
