@@ -4,7 +4,7 @@
 
 O principal objetivo do projeto é desenvolver um crawler para capturar os tweets em tempo real sobre o 'novo serviço' de streaming da Disney : Disney Plus. Após a realização da captação dos tweets na ferramenta Twitter era necessário implementar uma pipeline automatizando com a ferramenta Pentaho (PDI) para limpeza, organização e estruturação dos dados. Posteriormente, escrever os dados limpos e tratados em uma tabela relacional : DataLake : MySQL. 
 
-📢  ETAPA : EXTRAÇÃO 
+📢  ETAPA 1 : EXTRAÇÃO 
 
 Para a realização da extração dos tweets foi necessário utilizar a linguagem Python e a utilização da API do Twitter, transformando as colunas e extraindo para um DataLake : MySQL.
 
@@ -191,9 +191,13 @@ $ tratado.to_sql("tweets_disney",con=engine, index=True, if_exists='append')
 
 ## 🎲 Tratamento de dados / Processo ETL na ferramenta Pentaho (PDI)
 
+📢  ETAPA 2 : TRANSFORMAÇÃO 
+
 Na transformação dos dados foi necessário utilizar a ferramenta Pentaho. O primeiro passo foi necessário capturar os dados em um DataLake : MySQL, logo após foi essencial realizar a transformação, deletando algumas colunas, complementando campos vazios, ordenando os dados e extraindo para um Data Mart. 
 
 ![Tratamento de dados](https://github.com/gacarvalho/analyze-tweets-disney-plus/blob/main/etl/transformation.gif?raw=true)
+
+📢  ETAPA 3 : CARGAS 
 
 Logo após o desenvolvimento do tratamento dos dados foi necessário automatizar esse processo, e para isso, foi aplicado um JOB. 
 
