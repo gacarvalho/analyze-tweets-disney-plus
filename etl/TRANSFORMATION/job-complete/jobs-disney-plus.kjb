@@ -403,11 +403,11 @@
       <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
-      <repeat>N</repeat>
-      <schedulerType>0</schedulerType>
+      <repeat>Y</repeat>
+      <schedulerType>3</schedulerType>
       <intervalSeconds>0</intervalSeconds>
       <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
+      <hour>21</hour>
       <minutes>0</minutes>
       <weekDay>1</weekDay>
       <DayOfMonth>1</DayOfMonth>
